@@ -21,6 +21,6 @@ func SaveTime(functionName string, duration time.Duration)  {
 
 //PrintSaveTime will print out what is being saved before saving it
 func PrintSaveTime(functionName string, duration time.Duration){
-  log.Println("functionName", ",", duration.String())
+  log.Println(functionName, ",", duration.String())
   SaveTime(functionName, duration)
 }
